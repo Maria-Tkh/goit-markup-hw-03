@@ -1,0 +1,201 @@
+/* Секция "Герой" */
+
+.section-hero {
+  background-color: var(--black);
+}
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+.section-hero .button {
+  background-color: var(--blue);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-text);
+
+  min-height: 50px;
+  min-width: 200px;
+  justify-content: center;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
+
+.section-hero .button:focus,
+.section-hero .button:hover,
+.section-hero .button:active {
+  background-color: var(--white);
+  color: var(--black-text);
+}
+
+/* Контейнер секции "Герой" */
+.section-hero .container {
+  display: block;
+  align-self: center;
+  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section-hero .title,
+.section-hero .button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Делаем отступ между "title" и "button" */
+.section-hero .title {
+  padding-bottom: 30px;
+}
+
+/* Размеры  "button"*/
+/* .section-hero .button {
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 4px;
+
+} */
+
+/* Секция "Преимущества" */
+
+/* Задаём flex и паддинг секции "Преимущества" */
+.advantages .container {
+  display: flex;
+  padding-top: 94px;
+  margin: auto;
+  justify-content: center;
+}
+
+/* Задаём размеры и отступы элементам секции "Преимущества" */
+.advantages .container li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.advantages .container li {
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/* Задаём характеристики текста элементов секции "Преимущества" */
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--black-text);
+}
+
+.advantage-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text);
+}
+
+/* Задаём flex и паддинги секциям "Услуги" и "Команда"  */
+
+.services .container,
+.section-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Подзаголовки секций "Услуги" и "Команда" */
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--black-text);
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.services .service-items {
+  display: flex;
+  margin: auto;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.services .service-items :not(:first-child) {
+  margin-left: 30px;
+}
+
+/* Секция "Команда" */
+
+.section-team {
+  background-color: var(--ghost-white);
+}
+
+.employee-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text);
+}
+
+.employee-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text);
+}
+
+.team-cards {
+  display: flex;
+  margin: auto;
+  padding-left: 0px;
+}
+
+.team-cards li:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* Обнуляем марджины */
+
+.employee-name,
+.employee-role {
+  margin: auto;
+}
+
+/* Задаём паддинги элементов контейнеров employee-card  */
+
+.employee-name {
+  padding-top: 30px;
+}
+
+.employee-role {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}

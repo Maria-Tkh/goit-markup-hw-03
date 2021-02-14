@@ -1,0 +1,107 @@
+/* Страница "Портфолио" */
+
+/* Задаём flex и паддинги секции nav-buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+}
+
+.nav-buttons :not(:first-child) {
+  margin-left: 8px;
+}
+
+.button {
+  background-color: var(--ghost-white);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-text);
+
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+/* Псевдоклассы hover, focus, active для кнопок секции "Портфолио" */
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--blue);
+  color: var(--white-text);
+}
+
+/* Перечень проектов */
+.project-list {
+  background-color: var(--white);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--black-text);
+}
+
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--grey-text);
+}
+
+/* Задаём паддинги секции со списком проектов  */
+
+.container .project-list {
+  padding-bottom: 94px;
+}
+/* Сетка проектов на flex */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 0px;
+
+  outline: tomato;
+}
+
+.project-list .project-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  outline: tomato;
+}
+
+.card-content {
+  padding: 20px 24px;
+  outline: 1px solid tomato;
+}
+
+.project-title,
+.project-type {
+  margin: auto;
+}
+.project-type {
+  margin-top: 4px;
+}
+
+.card-thumb {
+  outline: 1px solid tomato;
+}
+
+.project-item * {
+  outline: 1px solid tomato;
+}
