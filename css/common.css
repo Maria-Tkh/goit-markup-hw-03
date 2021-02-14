@@ -108,6 +108,8 @@ body {
   justify-content: space-between;
 }
 
+/* Делаем высокие кнопки-ссылки */
+
 .nav-menu .link {
   padding-top: 10px;
   padding-bottom: 10px;
