@@ -92,11 +92,6 @@ body {
   padding-right: 15px;
 }
 
-/* Задаём верхний паддинг для хедера */
-.header {
-  padding-top: 24px;
-}
-
 /* Задаём flex элементам хедера */
 
 .header .container,
@@ -108,24 +103,31 @@ body {
 
 /* Контейнер хедера */
 .header .container {
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Делаем высокие кнопки-ссылки */
 
-.nav-menu .link {
+.nav-menu,
+.contact-items {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  align-items: center;
 }
 
 /* Марджины для логотипа */
 .header .logo-title {
   margin-right: 93px;
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 
-.nav-menu {
+/* Задаём нижний марджин кнопкам-ссылкам */
+.nav-menu,
+.contact-items {
   align-items: center;
 }
 
