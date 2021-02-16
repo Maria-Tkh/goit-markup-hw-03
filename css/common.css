@@ -92,6 +92,11 @@ body {
   padding-right: 15px;
 }
 
+/* Задаём верхний паддинг для хедера */
+.header {
+  padding-top: 24px;
+}
+
 /* Задаём flex элементам хедера */
 
 .header .container,
@@ -117,7 +122,6 @@ body {
 /* Марджины для логотипа */
 .header .logo-title {
   margin-right: 93px;
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -188,17 +192,17 @@ img {
   color: var(--white-text-op60);
 }
 
-/* Контейнер футера */
-
-.footer .container {
-  display: block;
-  padding-top: 60px;
+/* Задаём паддинги для секция футера */
+.footer {
   padding-bottom: 60px;
+  padding-top: 60px;
 }
+
+/* Контейнер футера */
 
 .footer .logo-title {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .address,
@@ -210,4 +214,5 @@ img {
 
 .mail {
   padding-bottom: 9px;
+  margin: 0;
 }

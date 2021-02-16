@@ -39,8 +39,8 @@
   color: var(--black-text);
 }
 
-/* Контейнер секции "Герой" */
-.section-hero .container {
+/* Размеры секции "Герой" */
+.section-hero {
   display: block;
   align-self: center;
   min-height: 600px;
@@ -59,23 +59,16 @@
   padding-bottom: 30px;
 }
 
-/* Размеры  "button"*/
-/* .section-hero .button {
-  height: 50px;
-  width: 200px;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  border-radius: 4px;
-
-} */
-
 /* Секция "Преимущества" */
 
-/* Задаём flex и паддинг секции "Преимущества" */
+/* Задаём верхний паддинг секции "Преимущества" */
+.advantages {
+  padding-top: 94px;
+}
+
+/* Задаём flex контейнеру секции "Преимущества" */
 .advantages .container {
   display: flex;
-  padding-top: 94px;
   margin: auto;
   justify-content: center;
 }
@@ -105,16 +98,16 @@
 .advantage-description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   letter-spacing: 0.03em;
 
   color: var(--grey-text);
 }
 
-/* Задаём flex и паддинги секциям "Услуги" и "Команда"  */
+/* Задаём паддинги секциям "Услуги" и "Команда"  */
 
-.services .container,
-.section-team .container {
+.services,
+.section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -189,7 +182,7 @@
   margin: auto;
 }
 
-/* Задаём паддинги элементов контейнеров employee-card  */
+/* Задаём паддинги, границы и тени элементов контейнеров employee-card  */
 
 .employee-name {
   padding-top: 30px;
@@ -198,4 +191,10 @@
 .employee-role {
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.employee-card {
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0px 0px 4px 4px;
 }

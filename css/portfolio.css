@@ -1,12 +1,16 @@
 /* Страница "Портфолио" */
 
+/* Задаём верхнюю границу и верхний паддинг для секции "Портфолио" */
+.portfolio {
+  border-top: 1px solid #ececec;
+  padding-top: 94px;
+}
+
 /* Задаём flex и паддинги секции nav-buttons */
 .nav-buttons {
   display: flex;
   justify-content: center;
-  margin: auto;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin: 0 0 50px 0;
   padding-left: 0px;
 }
 
@@ -92,4 +96,8 @@
 }
 .project-type {
   margin-top: 4px;
+}
+
+.project-list .card {
+  border: 1px solid #eeeeee;
 }
